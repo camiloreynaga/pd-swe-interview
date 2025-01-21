@@ -15,14 +15,14 @@ app.use(express.urlencoded({ extended: true }));
 app.post('/data', async (req, res) => {
   // TODO: parse incoming data, and save it to the database
   // data is of the form:
-  //  {timestamp} {name} {value}
+  //  {farmerid} {attribute} {value}
 
   // addReading(...)
 
   return res.json({ success: false });
 });
 
-app.get('/data', async (req, res) => {
+app.get('/aggregate', async (req, res) => {
   // TODO: check what dates have been requested, and retrieve all data within the given range
 
   // getReading(...)

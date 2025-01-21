@@ -71,7 +71,7 @@ curl --request POST \
 16499 TotalFarmSize 13
 16500 Country "Kenya"
 16500 PlotCount 1
-16501 PlotCount 12
+16501 PlotCount 12'
 ```
 ​
 ### Add Data (malformed)
@@ -80,13 +80,13 @@ curl --request POST \
   --url http://localhost:3000/data \
   --header 'Content-Type: text/plain' \
   --data '16499 Name "John Doe"
-16499 14
+16499 14'
 ```
 ​
 ### Get Data
 ```sh
 curl --request GET \
-    --url 'http://localhost:3000/aggregate?country=Uganda&attributes=PlotCount,TotalFarmSize`
+    --url 'http://localhost:3000/aggregate?country=Uganda&attributes=PlotCount,TotalFarmSize'
 ```
 ​
 ## Additional Considerations
