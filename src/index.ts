@@ -13,17 +13,17 @@ app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/data", async (req, res) => {
-	// TODO: parse incoming data, and save it to the database
-	// data is of the form:
-	//  {farmerid} {attribute} {value}
+  // TODO: parse incoming data, and save it to the database
+  // data is of the form:
+  //  {farmerid} {attribute} {value}
 
-	return res.json({ success: false });
+  return res.json({ success: false });
 });
 
 app.get("/aggregate", async (req, res) => {
-	// TODO: check what country has been requested, and return aggregates for the
-	// named attributes for all farmers in that country
-	return res.json({ success: false });
+  // TODO: check what country has been requested, and return aggregates for the
+  // named attributes for all farmers in that country
+  return res.json({ success: false });
 });
 
 app.listen(PORT, () => console.log(`Running on port ${PORT} ⚡`));
